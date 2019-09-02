@@ -86,12 +86,12 @@ let midImg = document.querySelector(".middle-img");
 midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 let midInfo = document.querySelectorAll('.bottom-content h4');
-midInfo[0].textContent = siteContent["main-content"]["service-h4"];
+midInfo[0].textContent = siteContent["main-content"]["services-h4"];
 midInfo[1].textContent = siteContent["main-content"]["product-h4"];
 midInfo[2].textContent = siteContent["main-content"]["vision-h4"];
 
 let midPara = document.querySelectorAll('.bottom-content p');
-midPara[0].textContent = siteContent["main-content"]["service-content"];
+midPara[0].textContent = siteContent["main-content"]["services-content"];
 midPara[1].textContent = siteContent["main-content"]["product-content"];
 midPara[2].textContent = siteContent["main-content"]["vision-content"];
 
@@ -107,9 +107,14 @@ let copyRight = document.querySelector('footer p:nth-child(1)');
 copyRight.textContent = siteContent["footer"]["copyright"];
 
 let navBar = document.querySelector('nav');
-let a = document.createElement("a");
-a.textContent = "Career";
-navBar.appendChild(a);
+let begining = document.createElement("a");
+begining.textContent = "Home";
+navBar.prepend(begining);
+
+let navBar2 = document.querySelector('nav');
+let end = document.createElement("a");
+end.textContent = "Career";
+navBar.appendChild(end);
 
 let navColor = document.querySelectorAll('a');
 navColor[0].style.color = "green";
@@ -119,8 +124,6 @@ navColor[3].style.color = "green";
 navColor[4].style.color = "green";
 navColor[5].style.color = "green";
 navColor[6].style.color = "green";
+navColor[7].style.color = "green";
 
 
-
-
-console.log(mmm);
