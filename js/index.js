@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM\n Is \n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -68,8 +68,10 @@ nav6.setAttribute("id", "nav-item-6");
 let h123= document.getElementsByTagName("h1")[0];
 h123.innerText = siteContent["cta"]["h1"];
 
-let button = document.getElementsByTagName('button')[0];
+
+let button = document.querySelector('button');
 button.textContent = siteContent["cta"]["button"];
+button.style.boxShadow = "5px 8px #888888";
 
 let topImg = document.querySelector("#cta-img");
 topImg.setAttribute("src",siteContent["cta"]["img-src"]);
@@ -105,6 +107,9 @@ lowerPara[2].textContent = siteContent["contact"]["email"];
 
 let copyRight = document.querySelector('footer p:nth-child(1)');
 copyRight.textContent = siteContent["footer"]["copyright"];
+let foot =document.querySelector("footer");
+foot.style.background = "#999999";
+foot.style.padding = "12px 0";
 
 let navBar = document.querySelector('nav');
 let begining = document.createElement("a");
@@ -127,3 +132,5 @@ navColor[6].style.color = "green";
 navColor[7].style.color = "green";
 
 
+let buttonShadow = document.querySelector('button');
+buttonShadow.style.boxShadow = "5px 8px #888888";
