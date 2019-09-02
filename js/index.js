@@ -42,36 +42,66 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let nav1 = document.querySelector('nav a:nth-child(1)');
-nav1.textContent = "Services";
+nav1.textContent = siteContent["nav"]["nav-item-1"];;
 nav1.setAttribute("id", "nav-item-1");
 
 let nav2 = document.querySelector('nav a:nth-child(2)');
-nav2.textContent = "Product";
+nav2.textContent = siteContent["nav"]["nav-item-2"];;
 nav2.setAttribute("id", "nav-item-2");
 
 let nav3 = document.querySelector('nav a:nth-child(3)');
-nav3.textContent = "Vision";
+nav3.textContent = siteContent["nav"]["nav-item-3"];;
 nav3.setAttribute("id", "nav-item-3");
 
 let nav4 = document.querySelector('nav a:nth-child(4)');
-nav4.textContent = "Features";
+nav4.textContent = siteContent["nav"]["nav-item-4"];;
 nav4.setAttribute("id", "nav-item-4");
 
 let nav5 = document.querySelector('nav a:nth-child(5)');
-nav5.textContent = "About";
+nav5.textContent = siteContent["nav"]["nav-item-5"];;
 nav5.setAttribute("id", "nav-item-5");
 
 let nav6 = document.querySelector('nav a:nth-child(6)');
-nav6.textContent = "Contact";
+nav6.textContent = siteContent["nav"]["nav-item-6"];
 nav6.setAttribute("id", "nav-item-6");
 
 let h123= document.getElementsByTagName("h1")[0];
-h123.innerText = "DOM\n Is \n Awesome"
+h123.innerText = siteContent["cta"]["h1"];
 
-// let button = document.getElementsByTagName('button');
-// button.textContent = "Get Started"
-// console.log(button);
+let button = document.getElementsByTagName('button')[0];
+button.textContent = siteContent["cta"]["button"];
 
 let topImg = document.querySelector("#cta-img");
-topImg.setAttribute("src","img/header-img.png");
-console.log(topImg);
+topImg.setAttribute("src",siteContent["cta"]["img-src"]);
+
+let topInfo = document.querySelectorAll('.top-content h4');
+topInfo[0].textContent = siteContent["main-content"]["features-h4"];
+topInfo[1].textContent = siteContent["main-content"]["about-h4"];
+
+let topPara = document.querySelectorAll('.top-content p');
+topPara[0].textContent = siteContent["main-content"]["features-content"]
+topPara[1].textContent = siteContent["main-content"]["about-content"]
+
+let midImg = document.querySelector(".middle-img");
+midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+let midInfo = document.querySelectorAll('.bottom-content h4');
+midInfo[0].textContent = siteContent["main-content"]["service-h4"];
+midInfo[1].textContent = siteContent["main-content"]["product-h4"];
+midInfo[2].textContent = siteContent["main-content"]["vision-h4"];
+
+let midPara = document.querySelectorAll('.bottom-content p');
+midPara[0].textContent = siteContent["main-content"]["service-content"];
+midPara[1].textContent = siteContent["main-content"]["product-content"];
+midPara[2].textContent = siteContent["main-content"]["vision-content"];
+
+let lowerInfo = document.querySelectorAll('.contact h4');
+lowerInfo.textContent = siteContent["contact"]["contact-h4"];
+
+let lowerPara = document.querySelectorAll('.contact p');
+lowerPara[0].textContent = siteContent["contact"]["address"];
+lowerPara[1].textContent = siteContent["contact"]["phone"];
+lowerPara[2].textContent = siteContent["contact"]["email"];
+
+let copyRight = document.querySelector('footer p:nth-child(1)');
+copyRight.textContent = siteContent["footer"]["copyright"];
