@@ -105,3 +105,22 @@ lowerPara[2].textContent = siteContent["contact"]["email"];
 
 let copyRight = document.querySelector('footer p:nth-child(1)');
 copyRight.textContent = siteContent["footer"]["copyright"];
+
+let navBar = document.querySelector('nav');
+let a = document.createElement("a");
+a.textContent = "Career";
+navBar.appendChild(a);
+
+let navColor = document.querySelectorAll('a');
+navColor[0].style.color = "green";
+navColor[1].style.color = "green";
+navColor[2].style.color = "green";
+navColor[3].style.color = "green";
+navColor[4].style.color = "green";
+navColor[5].style.color = "green";
+navColor[6].style.color = "green";
+
+
+
+
+console.log(mmm);
