@@ -107,7 +107,7 @@ lowerPara[2].textContent = siteContent["contact"]["email"];
 
 let copyRight = document.querySelector('footer p:nth-child(1)');
 copyRight.textContent = siteContent["footer"]["copyright"];
-let foot =document.querySelector("footer");
+let foot = document.querySelector("footer");
 foot.style.background = "#999999";
 foot.style.padding = "12px 0";
 
@@ -116,7 +116,6 @@ let begining = document.createElement("a");
 begining.textContent = "Home";
 navBar.prepend(begining);
 
-let navBar2 = document.querySelector('nav');
 let end = document.createElement("a");
 end.textContent = "Career";
 navBar.appendChild(end);
@@ -130,7 +129,3 @@ navColor[4].style.color = "green";
 navColor[5].style.color = "green";
 navColor[6].style.color = "green";
 navColor[7].style.color = "green";
-
-
-let buttonShadow = document.querySelector('button');
-buttonShadow.style.boxShadow = "5px 8px #888888";
